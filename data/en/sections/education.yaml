@@ -4,101 +4,127 @@ section:
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
-  weight: 4
+  weight: 20
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
 
 degrees:
-- name: Ph.D in Quantum Cryptography
-  icon: fa-microscope
-  timeframe: 2016-2020
+- name: B.Sc. in Computer Engineering
+  icon: fa-university
+  timeframe: Sep 2020 -- Sep 2025
   institution:
-    name: ABC University of Technology
-    url: "#"
-    logo: /images/sections/education/tech_college.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/tech_college.png
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.6
-    outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
-    url: "#"
-- name: B.Sc. in Computer Science & Engineering
-  icon: fa-graduation-cap
-  timeframe: 2012-2016
-  institution:
-    name: University of XYZ
-    url: "#"
-    logo: /images/sections/education/university.jpg
+    name: Iran University of Sceince & Technology
+    url: "https://www.iust.ac.ir/en"
+    logo: /images/sections/education/IUST.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/university.jpg
+    
   grade: #(optional)
     scale: CGPA
-    achieved: 3.5
-    outOf: 4
+    achieved: 3.98 (19.19)
+    outOf: 4 (20.00, Iranian scale)
+
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
     showGrades: true
-    collapseAfter: 3
+    collapseAfter: 6
     courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
+    - name: Fundamentals of Deep Learning
+      achieved: 20.00
+      outOf: 20.00
+    - name: Fundamentals of Computer Vision
+      achieved: 20.00
+      outOf: 20.00
+    - name: Fundamentals of Natural Language Processing
+      achieved: 20.00
+      outOf: 20.00
+    - name: Artificial Intelligence & Expert Systems
+      achieved: 19.56
+      outOf: 20.00
+    - name: Data Structures
+      achieved: 20.00
+      outOf: 20.00
+    - name: Algorithm Design & Analysis
+      achieved: 18.73
+      outOf: 20.00
+    - name: Engineering Statistics & Probabilities
+      achieved: 20.00
+      outOf: 20.00
+    - name: Software Engineering
+      achieved: 19.2
+      outOf: 20.00
+    - name: Computer Architecture
+      achieved: 19.5
+      outOf: 20.00
+    - name: Operating Systems
+      achieved: 20.00
+      outOf: 20.00
+    - name: Advanced Programming
+      achieved: 20.00
+      outOf: 20.00
+    - name: Principles of Database Design
+      achieved: 20.00
+      outOf: 20.00
+    - name: Principles of Compiler Design
+      achieved: 19.56
+      outOf: 20.00
+    - name: Computer Games Design
+      achieved: 20.00
+      outOf: 20.00
+    - name: Signals & Systems
+      achieved: 19.75
+      outOf: 20.00
+    - name: Differential Equations
+      achieved: 19.5
+      outOf: 20.00
+    - name: Theory & Algorithms of Graph 
+      achieved: 19.25
+      outOf: 20.00
+    - name: Systems Analysis and Design
+      achieved: 19.1
+      outOf: 20.00
+    - name: Discrete Mathematics
+      achieved: 18.50
+      outOf: 20.00
+    - name: Digital Computer Design
+      achieved: 20.00
+      outOf: 20.00
+    - name: Logic Circuits
+      achieved: 20.00
+      outOf: 20.00
+    - name: Methods of Research & Presentation
+      achieved: 18.5
+      outOf: 20.00
+    - name: Fundamentals of Computer & Programming
+      achieved: 18.5
+      outOf: 20.00
+      
   customSections: #(optional)
-    - name: Thesis
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - name: Supervisor
-      content: Fusce eu augue ut odio porttitor pulvinar.
-- name: Higher Secondary School Certificate
-  icon: fa-university
-  timeframe: 2010-2012
-  institution:
-    name: MST College of Science
-    url: "#"
-    logo: /images/sections/education/science_college.png
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/science_college.png
-  grade: #(optional)
-    scale: GPA
-    achieved: 5
-    outOf: 5
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-- name: Secondary School Certificate
+    - name: Acheivements
+      content: <ul><li>Ranked 3rd GPA among class of 100 undergraduate students in the Computer Engineering Department of Iran University of Science and Technology.</li><li>Outstanding student of the annual celebration of the university's educational excellence (ranked 2nd among the Computer Engineering students)</li><li>Ranked within the top 0.5% in the Iranian University Entrance Exam (Konkoor-e-Sarasari) for Bachelor's Study among more than 155,000 participants</li></ul>
+    # - name: Thesis (Under Prepration)
+    #   content: The Synergy of Artificial Intelligence and Virtual Reality in Residential Spaces
+    # - name: Supervisor
+    #   content: Dr. Mohmmadreza Mohammadi
+  # publications: #(optional)
+  # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  #   url: "#"
+  # - title: Fusce eu augue ut odio porttitor pulvinar.
+  #   url: "#"
+
+  # extracurricularActivities: #(optional)
+  # - In vitae facilisis est, eget porta sem.
+  # - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
+  # - Duis sed massa feugiat, ornare justo et, aliquam est.
+  # - Pellentesque ut fringilla magna.
+
+- name: Diploma in Mathematics and Physics Discipline
   icon: fa-school
-  timeframe: 2005-2010
+  timeframe: Sep. 2017 -- Jul. 2020
   institution:
-    name: JK School of Science
+    name: Ario Mosallah Nejad High School
   grade: #(optional)
-    scale: GPA
-    achieved: 4.5
-    outOf: 5
+    scale: CGPA
+    achieved: 19.80
+    outOf: 20.00

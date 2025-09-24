@@ -1,0 +1,64 @@
+# section information
+section:
+  name: Teaching Experience
+  id: teaching-experience
+  template: sections/experiences.html
+  enable: true
+  weight: 40
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Iran University of Science & Technology
+    url: "https://www.iust.ac.ir/en"
+    location: Tehran, Iran
+    logo: /images/sections/education/IUST.png
+  positions:
+  -  designation: Fundamentals of Programming | Dr. Marzieh Malekimajd
+     start: Sep. 2025
+     end: Present
+  -  designation: Fundamentals of Deep Learning | Dr. Marzieh Davoodabadi Farahani
+     start: Sep. 2024
+     end: Jan. 2025
+  -  designation: Fundamentals of Natural Language Processing | Dr. Nasser Mozayani
+     start: Sep. 2024
+     end: Jan. 2025
+  -  designation: Introduction to Programming Competitions | Dr. Farzaneh Ghayour Baghbani
+     start: Sep. 2024
+     end: Jan. 2025
+  -  designation: Digital Computer Design | Dr. Hakem Beitollahi
+     start: Sep. 2024
+     end: Jan. 2025
+  -  designation: Operating Systems | Dr. Reza Entezari-Maleki
+     start: Feb. 2024
+     end: Jul. 2024
+  -  designation: Artificial Intelligence | Dr. Mohammad Reza Mohammadi
+     start: Sep. 2023
+     end: Jan. 2024
+  -  designation: Computer Architecture | Dr. Hakem Beitollahi
+     start: Feb. 2023
+     end: Jul. 2023
+  -  designation: Algorithm Design & Analysis | Dr. Marzieh Malekimajd
+     start: Feb. 2023
+     end: Jul. 2023
+  -  designation: Compiler Design Principles | Dr. Saeed Parsa
+     start: Feb. 2023
+     end: Jul. 2023
+  -  designation: Theory of Languages & Machines | Dr. Reza Entezari-Maleki
+     start: Feb. 2023
+     end: Jul. 2023
+  -  designation: Logic Circuits Design | Dr. Hajar Falahati
+     start: Sep. 2022
+     end: Jan. 2023
+  -  designation: Data Structures | Dr. Hussain Rahmani
+     start: Sep. 2022
+     end: Jan. 2023
+  -  designation: Advanced Programming | Dr. Marzieh Malekimajd
+     start: Feb. 2022
+     end: Jul. 2022
+  -  designation: Discrete Mathematics | Dr. Vesal Hakami
+     start: Feb. 2022
+     end: Jul. 2022

@@ -1,7 +1,7 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://kamyarmoradian.github.io/personal-website/
 
-languageCode: bn
-title: "John's Blog"
+languageCode: en
+title: "Kamyar's Personal Webpage"
 
 # Use Hugo modules to add theme
 module:
@@ -10,7 +10,7 @@ module:
   mounts:
   - source: static/files
     target: static/files
-  - source: ./node_modules/flag-icons/flags
+  - source: ./node_modules/flag-icon-css/flags
     target: static/flags
   - source: ./node_modules/@fontsource/mulish/files
     target: static/files
@@ -23,13 +23,8 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "John's Blog"
+    title: "Kamyar's Personal Webpage"
     weight: 1
-  bn:
-    languageCode: bn
-    languageName: বাংলা
-    title: জনের ব্লগ
-    weight: 2
 # default language for the content
 defaultContentLanguage: en
 
@@ -58,19 +53,17 @@ enableEmoji: true
 # Site parameters
 params:
   # Background image of the landing page
-  background: /images/site/background.jpg
-  # Background image of the landing page for dark theme
-  #darkBackground: /images/site/background.jpg
+  background: /images/site/background_4.png
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   logo:
-    main: /images/site/main-logo.png
-    inverted: /images/site/inverted-logo.png
+    main: /images/site/inverted-logo.png
+    inverted: /images/site/main-logo.png
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/KamyarMoradian/personal-website
   # Default branch of your Git repo
   gitBranch: main
 
@@ -80,19 +73,10 @@ params:
 
   # Configure various features of this theme
   features:
-    # [Deprecated] Enable dark theme
-    # This is a deprecated setting, but has not been removed to maintain backward compatibility
-    # If `theme` is set, the `darkMode` setting will be discarded.
-    # darkMode:
-    #   enable: true
 
-    # Configure theme color settings
-    theme:
+    # Enable dark theme
+    darkMode:
       enable: true
-      services:
-        light: true # enable light theme. default "true"
-        dark: true # enable dark theme. default "true"
-        default: system # can be either light, dark or system. default "system"
 
     # Enable and configure portfolio
     portfolio:
@@ -100,7 +84,7 @@ params:
 
     # Enable and configure blog posts
     blog:
-      enable: true
+      enable: false
       showAuthor: true # shows the author of post (defaults true)
       # Share post on different social media
       shareButtons:
@@ -117,7 +101,7 @@ params:
 
     # Enable & configure "Notes" features
     notes:
-      enable: true
+      enable: false
 
     # Enable comment feature. There, should be only one of them.
     comment:
@@ -155,7 +139,7 @@ params:
 
     # Enable Analytics
     analytics:
-      enabled: true
+      enabled: false
       services:
         # Google Analytics
         google:
@@ -266,11 +250,7 @@ params:
           # options doc: https://github.com/sampotts/plyr#options
           # fullscreen: true
     
-    # Enables copy code button
-    copyCodeButton:
-      enable: true
-
-    # Enable reading time support in post cards and in post pages
+        # Enable reading time support in post cards and in post pages
     readingTime:
       enable: false
     

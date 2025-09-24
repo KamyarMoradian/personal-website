@@ -8,94 +8,99 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Computer Engineering Student
 # your company information
 company:
-  name: Example Co.
-  url: "https://www.example.com"
+  name: IUST (Ranked 4th among Iranian universities)
+  url: "https://www.topuniversities.com/universities/iran-university-science-technology"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+summary: "
+I am a recent graduate from the Iran University of Science and Technology (IUST), where I earned my B.Sc. in Computer Engineering with a passion for tackling complex challenges in machine learning and computer vision. My academic journey has been driven by a deep curiosity and a love for solving what I call \"big problems.\" <br><br>
+This passion was truly ignited during my undergraduate thesis on object insertion using diffusion models. Discovering this fascinating and rapidly evolving field felt like finding a new frontier. It presented a steep learning curve that I embraced, reinforcing my belief that challenging problems are the greatest catalysts for growth. This experience set me on my current research path, where I aim to not only understand and apply these powerful models but also to contribute to their advancement. <br><br>
+As a research assistant at IUST's CV Lab, I put this philosophy into practice by developing a novel, training-free framework for object removal and insertion in indoor scenes. This work achieved excellent results by specifically addressing key challenges in generative AI, such as high computational costs and data scarcity. I am currently preparing a first-author manuscript detailing these findings for publication. <br><br>
+Looking ahead, I am excited to begin my graduate studies and continue my exploration of machine learning's fascinating realm. While my core experience is in computer vision, I am particularly fascinated by the synergy between different AI domains. I am eager to tackle challenges in advanced generative modeling, from 2D and 3D vision to video processing. Furthermore, I am deeply interested in the intersection of vision and language —exploring how machines can understand visual data, and even how these multimodal models can be used to automate the complex, human-centric evaluation of generative vision tasks. 
+"
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "example@gmail.com"
+  url: "kamyarmorad1381@gmail.com"
 
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/example"
-
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
+  url: "https://www.github.com/KamyarMoradian"
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "#"
+  url: "https://www.linkedin.com/in/kamyar-moradian"
 
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "#"
+# - name: Stackoverflow
+#   icon: "fab fa-stack-overflow"
+#   url: "#"
 
-- name: Facebook
-  icon: "fab fa-facebook"
-  url: "#"
+# - name: Twitter
+#   icon: "fab fa-twitter"
+#   url: "#"
 
-- name: Mastadon
-  icon: "fab fa-mastodon"
-  url: "#"
-  rel: "me noopener"
+# - name: Facebook
+#   icon: "fab fa-facebook"
+#   url: "#"
 
-- name: ResearchGate
-  icon: "fab fa-researchgate"
-  url: "https://www.researchgate.net/profile/john-doe"
+# - name: Mastadon
+#   icon: "fab fa-mastodon"
+#   url: "#"
+#   rel: "me noopener"
+
+# - name: ResearchGate
+#   icon: "fab fa-researchgate"
+#   url: "https://www.researchgate.net/profile/john-doe"
 
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
-resourceLinks:
-- title: "My Resume"
-  url: "files/resume.pdf"
+# resourceLinks:
+# - title: "My CV"
+#   url: "files/cv.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-- type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+# - type: certification
+#   name: Certified Kubernetes Security Specialist
+#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
 
-- type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
+# - type: certification
+#   name: Istio and IBM Cloud Kubernetes Service
+#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+#   badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
 
-- type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+# - type: certification
+#   name: Artificial Intelligence and Machine Learning
+#   url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
+#   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 
-- type: soft-skill-indicator
-  name: Leadership
-  percentage: 85
-  color: blue
+# - type: soft-skill-indicator
+#   name: Leadership
+#   percentage: 85
+#   color: blue
 
-- type: soft-skill-indicator
-  name: Team Work
-  percentage: 90
-  color: yellow
+# - type: soft-skill-indicator
+#   name: Team Work
+#   percentage: 90
+#   color: yellow
 
-- type: soft-skill-indicator
-  name: Hard Working
-  percentage: 85
-  color: orange
+# - type: soft-skill-indicator
+#   name: Hard Working
+#   percentage: 85
+#   color: orange
 
 # you can also provide color code instead of the color name
 # - type: soft-skill-indicator

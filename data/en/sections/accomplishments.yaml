@@ -1,9 +1,10 @@
 # section information
 section:
-  name: Accomplishments
-  id: accomplishments
+  name: Certificates
+  id: certificates
+  template: sections/accomplishments.html
   enable: true
-  weight: 9
+  weight: 70
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -11,36 +12,151 @@ section:
 
 # Your accomplishments
 accomplishments:
-- name: Linux Foundation System Administrator
-  timeline: "March 2018 - March 2019"
+- name: Convolutional Neural Networks
+  timeline: "Mar 2024"
   organization:
-    name: Linux Foundation
-    url: https://www.linuxfoundation.org
-  courseOverview: This course helps to understand the key concepts such as networking, storage, security, maintenance, logging and monitoring, application lifecycle, troubleshooting, API object primitives etc. It also help to grow the ability to establish basic use-cases for end users.
-  certificateURL: "https://example.com"
-
-- name: Machine Learning
-  timeline: "Jun 2020 - Jan 2021"
-  organization:
-    name: Coursera
+    name: Coursera, DeepLearning.AI
     url: https://www.coursera.org
-  courseOverview: "This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI)."
-  certificateURL: "https://example.com"
+  courseOverview: "Facial Recognition System | Tensorflow | Convolutional Neural Network | Deep Learning | Object Detection and Segmentation"
+  certificateURL: "https://coursera.org/verify/K68B62KNXBSV"
 
-- name: Grokking the System Design Interview
-  timeline: "Jan 2018 - Sept 2018"
+- name: Sequence Models
+  timeline: "Feb 2024"
   organization:
-    name: educative
-    url: https://www.educative.io
-  courseOverview: This course is a complete guide to master the SDIs. It is created by hiring managers who’ve been working at Google, Facebook, Microsoft, and Amazon. We've carefully chosen a set of questions that have not only been repeatedly asked at top companies, but also provide a thorough experience to handle any system design problem.
-  certificateURL: "https://example.com"
+    name: Coursera, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Gated Recurrent Unit (GRU) | Recurrent Neural Network | Natural Language Processing | Long Short Term Memory (LSTM) | Attention Models"
+  certificateURL: "https://coursera.org/verify/JQY22J2U7285"
 
-- name: Mastering Multithreading Programming with Go (Golang)
-  timeline: "Nov 2017 - Mar 2018"
+- name: Improving Deep Neural Networks - Hyperparameter Tuning, Regularization and Optimization
+  timeline: "Oct 2023"
   organization:
-    name: Udemy
-    url: https://www.udemy.com
-  courseOverview: Discover how to create responsive and high performance software. Develop programs with Golang that are highly Concurrent and Parallel. Improve your programming skills in Go with more advanced, multithreading topics.
-  certificateURL: "https://example.com"
- 
+    name: Coursera, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Tensorflow | Deep Learning | Hyperparameter Tuning | Mathematical Optimization"
+  certificateURL: "https://coursera.org/verify/WQ36CME9F9GT"
+
+- name: Structuring Machine Learning Projects
+  timeline: "Oct 2023"
+  organization:
+    name: Coursera, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Decision-Making | Machine Learning | Deep Learning | Inductive Transfer | Multi-Task Learning"
+  certificateURL: "https://coursera.org/verify/P8A8TLH2WQDR"
+
+- name: Neural Networks and Deep Learning
+  timeline: "Sep 2023"
+  organization:
+    name: Coursera, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Artificial Neural Network | Backpropagation | Python Programming | Deep Learning | Neural Network Architecture"
+  certificateURL: "https://coursera.org/verify/CRMC35VM8UFV"
+
+- name: Unsupervised Learning, Recommenders, Reinforcement Learning
+  timeline: "Sep 2023"
+  organization:
+    name: Coursera, Standford, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Anomaly Detection | Unsupervised Learning | Reinforcement Learning | Collaborative Filtering | Recommender Systems"
+  certificateURL: "https://coursera.org/share/2ccdeaed0f42bf531d8734bcca968c58"
+
+- name: Advanced Learning Algorithms
+  timeline: "Sep 2023"
+  organization:
+    name: Coursera, Standford, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: " Tensorflow | Advice for Model Development | Artificial Neural Network | Xgboost | Tree Ensembles"
+  certificateURL: "https://coursera.org/verify/AQHTJELA9ASU"
+
+- name: Supervised Machine Learning - Regression and Classification
+  timeline: "Aug 2023"
+  organization:
+    name: Coursera, Standford, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Linear Regression | Regularization to Avoid Overfitting | Logistic Regression for Classification | Gradient Descent | Supervised Learning"
+  certificateURL: "https://coursera.org/verify/DZCT3ML82SPY"
+
+- name: Linear Algebra for Machine Learning and Data Science
+  timeline: "Sep 2023"
+  organization:
+    name: Coursera, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Eigenvalues And Eigenvectors | Linear Equation | Determinants | Machine Learning | Linear Algebra"
+  certificateURL: "https://coursera.org/verify/LP3FDG6MDN85"
+
+- name: AI for Everyone
+  timeline: "Jul 2023"
+  organization:
+    name: Coursera, DeepLearning.AI
+    url: https://www.coursera.org
+  courseOverview: "Deep Learning | Machine Learning"
+  certificateURL: "https://coursera.org/verify/AKLZSSGJCJKR"
+
+- name: Capstone - Retrieving, Processing, and Visualizing Data with Python
+  timeline: "Sep 2022"
+  organization:
+    name: Coursera, University of Michigan
+    url: https://www.coursera.org
+  courseOverview: "Data Analysis | Python Programming | Database (DBMS) | Data Visualization"
+  certificateURL: "https://coursera.org/verify/AGDCLE9948WH"
+
+- name: Using Databases with Python
+  timeline: "Sep 2022"
+  organization:
+    name: Coursera, University of Michigan
+    url: https://www.coursera.org
+  courseOverview: "Python Programming | Database (DBMS) | Sqlite | SQL"
+  certificateURL: "https://coursera.org/verify/HUS3M6ZFWSR6"
+
+- name: Using Python to Access Web Data
+  timeline: "Sep 2022"
+  organization:
+    name: Coursera, University of Michigan
+    url: https://www.coursera.org
+  courseOverview: "Computer Programming | Computer Programming Tools | Programming Principles | Python Programming | Data Structures | Web Development | Computer Networking | HTML and CSS"
+  certificateURL: "https://coursera.org/verify/87KF5NUJ4TU9"
+
+- name: Python Data Structures
+  timeline: "Aug 2022"
+  organization:
+    name: Coursera, University of Michigan
+    url: https://www.coursera.org
+  courseOverview: "Python Syntax And Semantics | Data Structure | Tuple | Python Programming"
+  certificateURL: "https://coursera.org/verify/JRPSSGWAAKT5"
+
+- name: Programming for Everybody (Getting Started with Python)
+  timeline: "Aug 2022"
+  organization:
+    name: Coursera, University of Michigan
+    url: https://www.coursera.org
+  courseOverview: "Python Syntax And Semantics | Basic Programming Language | Computer Programming | Python Programming"
+  certificateURL: "https://coursera.org/verify/WJ326BJVNZYQ"
+
+- name: Algorithms on Graphs
+  timeline: "Jul 2022"
+  organization:
+    name: Coursera, UC, SanDiego
+    url: https://www.coursera.org
+  courseOverview: "Algorithms | Data Structures | Graph Theory | Theoretical Computer Science | Computer Programming"
+  certificateURL: "https://coursera.org/verify/8498BUY5N2QJ"
+
+- name: Data Structures
+  timeline: "Feb 2022"
+  organization:
+    name: Coursera, UC, SanDiego
+    url: https://www.coursera.org
+  courseOverview: "Algorithms | Computer Programming | Data Structures | Theoretical Computer Science | Problem Solving | Computer Programming Tools | Mathematical Theory & Analysis | Programming Principles | Mathematics"
+  certificateURL: "https://coursera.org/verify/PE56BBAQMN8R"
+
+- name: Algorithmic Toolbox
+  timeline: "Sep 2021"
+  organization:
+    name: Coursera, UC, SanDiego
+    url: https://www.coursera.org
+  courseOverview: "Algorithms | Computer Programming | Problem Solving | Theoretical Computer Science | Critical Thinking | Computer Programming Tools | Data Structures | Programming Principles | Software Testing"
+  certificateURL: "https://coursera.org/verify/XB4RDHT25RTD"
+
+
+
+
 

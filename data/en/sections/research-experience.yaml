@@ -1,0 +1,37 @@
+# section information
+section:
+  name: Research Experience
+  id: research-experience
+  enable: true
+  weight: 30
+  showOnNavbar: true
+  template: sections/experiences.html
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Computer Vision Lab of Iran University of Science & Technology
+    url: "https://www.linkedin.com/company/cvlab-iust/"
+    location: Tehran, Iran
+    logo: /images/sections/experiences/cvlab_iust_logo_no_persian.svg
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/experiences/company1.jpg
+    # company overview
+    # overview: Digikala Group is a leading e-commerce organization with a strong presence in multiple online industries, including consumer goods, fashion and apparel, e-books, content publishing, digital advertising, big data, fintech, FMCG, and logistics. The company operates through its subsidiaries, including Digikala, DIGISTYLE, Fidibo, and Digipay, which together represent a significant portion of Iran's online retail market share.
+
+  positions:
+  - designation: Research Assistant
+    start: October 2024
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: Present
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Developed a novel, training-free, dual-pipeline framework for object removal and insertion in indoor scenes, addressing high computational costs and data scarcity challenges in generative AI.
+    - Engineered a two-stage removal pipeline that overcomes object hallucination by first using a GAN (<code>Big LaMa</code>) to generate a coarse prior, which then provides strong geometric and semantic guidance to a final diffusion-based refinement stage (<code>SDXL</code>).
+    - Designed a novel 3D-aware insertion method by integrating a single-image 3D reconstruction model (<code>InstantMesh</code>), enabling the projection of 3D assets into the scene with physically plausible scale, perspective, and occlusion based on depth estimation.
+    - Achieved state-of-the-art results for object removal, reducing distributional realism error (Frechet Distance w/ DINOv2) <strong>by 17.9%</strong> over <code>Big LaMa</code> while improving semantic consistency (ReMOVE) <strong>by 8.5%</strong> over <code>Stable Diffusion XL Inpainting</code>.
+    - Set a new SOTA for object insertion, outperforming <code>MimicBrush</code> by producing better object fidelity (DreamSim, <strong>2.5% improvement</strong>) and reducing background distortion (LPIPS) <strong>by 55%</strong>.
+    - Contributed new community resources by establishing <strong>two benchmark datasets</strong> for evaluation and validating the removal pipeline as a bootstrap supervision tool for generating synthetic training data for object insertion tasks.
+    - Preparing a <strong>first-author manuscript</strong> detailing the dual-pipeline framework for publication.

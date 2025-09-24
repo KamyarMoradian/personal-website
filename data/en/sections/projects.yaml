@@ -1,9 +1,10 @@
 # section information
 section:
-  name: Projects
-  id: projects
+  name: Academic Projects
+  id: academic-projects
   enable: true
-  weight: 5
+  weight: 50
+  template: sections/projects.html
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -12,54 +13,123 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Professional
-  filter: "professional"
-- name: Academic
-  filter: "academic"
-- name: Hobby
-  filter: "hobby"
+- name: Machine Learning
+  filter: Machine Learning
+- name: Deep Learning
+  filter: Deep Learning
+- name: Natural Lanuage Processing
+  filter: NLP
+- name: Computer Vision
+  filter: Computer Vision
+- name: Reinforcement Learning
+  filter: RL
+- name: Software Development
+  filter: Software Development
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+- name: Anti-Spoofing System for Facial Recognition
+  role: Fundamentals of Computer Vision Course Project
+  timeline: "Spring 2024"
+  repo: https://github.com/KamyarMoradian/Anti-Spoofing-System # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+  summary: Developed a real-time facial spoofing detection system by comparing a classical machine learning pipeline (combining feature extractors like <code>LBP</code> with <code>PCA</code> and an <code>SVM</code>) against a <code>MobileNetV2</code>-based deep learning model. Trained on the combined LCC FASD and CASIA datasets, the deep learning approach achieved <strong>97.4% accuracy</strong> and a <strong>91.7% F1-score</strong>. The <code>MobileNetV2</code> model also demonstrated superior robustness and generalization, outperforming the classical pipeline by over <strong>20 percentage points in accuracy</strong> when evaluated on the unseen iBeta video dataset, effectively highlighting the advantages of modern deep learning techniques.
+  tags: ["Computer Vision", "Machine Learning", "Deep Learning", "CNNs", "SVM", "Python", "TensorFlow", "OpenCV", "Scikit-learn"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
+- name: Medical Q&A RAG System
+  role: Natural Language Processing Course Project
+  timeline: "Spring 2024"
+  repo: https://github.com/KamyarMoradian/RAG-Evaluation-of-Different-Generators
+  summary: This project involved a detailed evaluation of large language models using a custom-built Retrieval-Augmented Generation (<code>RAG</code>) framework. I developed an end-to-end pipeline, vectorizing over 235,000 Q&A pairs from the AI Medical Chatbot dataset with the <code>all-MiniLM-L6-v2</code> model for context retrieval. An automated evaluation framework, using <code>gte-large-en-v1.5</code> to generate semantic similarity scores, was created to quantitatively assess query relevance and document faithfulness. This system was used to benchmark <code>Mistral-7B</code>, <code>Llama-3-8B</code>, and <code>Qwen2-7B</code>, identifying <code>Mistral-7B</code> as the top-performing model with a <strong>10% higher composite score</strong> and superior inference speed.
+  tags: ["NLP", "RAG", "LLM", "Machine Learning", "Deep Learning", "Generative AI", "Benchmarking", "Semantic Search", "Sentence Transformers", "Transformers", "Python", "Hugging Face", "Pandas"]
+
+- name: Sentiment Analysis on Persian Text
+  role: Deep Learning Course Project
+  timeline: "Fall 2023"
+  repo: https://github.com/KamyarMoradian/NLP-Sentimental-Analysis
   #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning"]
+  summary: Developed a multi-class emotion classification model for Persian text by benchmarking several fine-tuned <code>RoBERTa</code> variants on the ArmanEmo dataset. To handle the dataset's over 7,000 noisy social media texts, I engineered a robust preprocessing pipeline featuring text normalization, diacritic removal, and artifact handling. The final model, <code>XLM-RoBERTa-Large</code>, was selected for its superior performance, achieving a <strong>75.3% Macro F1-Score</strong>—a greater than <strong>13x improvement</strong> over the baseline—and ranking as a top project in its course. The project concluded with a detailed error analysis that identified key failure modes, such as sentence ambiguity and word-level biases.
+  tags: ["NLP", "Machine Learning", "Deep Learning", "Transformers", "Sentiment Analysis", "Data Cleaning", "Python", "PyTorch", "Hugging Face", "Pandas"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+- name: Persian Question Answering System
+  role: Contest
+  timeline: "Summer 2024"
+  repo: https://github.com/KamyarMoradian/Persian-QA
+  # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Developed a Persian extractive question-answering system by benchmarking and fine-tuning <code>ParsBERT</code> and <code>XLM-RoBERTa-Large</code> models on the <code>PersianQA</code> dataset. A robust text normalization pipeline using <code>Parsivar</code> was implemented to handle language-specific complexities. To provide a comprehensive assessment, a dual evaluation framework was created, combining standard metrics (<code>Exact Match</code> and <code>F1-score</code>) with a custom semantic similarity score based on <code>all-MiniLM-L6-v2</code> embeddings. After fine-tuning, the <code>XLM-RoBERTa-Large</code> model was identified as the top performer, achieving an <strong>85.15% F1-score</strong> and a <strong>70.96% Exact Match</strong> score, outperforming the fine-tuned <code>ParsBERT</code> (<strong>72.67% F1</strong>, <strong>57.84% EM</strong>). Both models surpassed the original <code>XLM-RoBERTa</code> (84.81% F1, 70.40% EM) and <code>ParsBERT</code> (70.06% F1, 53.55% EM) baselines reported by the dataset's authors.
+  tags: ["NLP", "Question Answering", "Transformers", "Sentence Transformers", "Fine-Tuning", "Semantic Similarity", "Python", "PyTorch", "Hugging Face"]
 
-- name: Nocode
-  logo: /images/sections/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
+- name: Persian Auto Speech Recognition
+  role: Contest
+  timeline: "Summer 2024"
+  repo: https://github.com/KamyarMoradian/Persian-ASR
+  # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Developed a Persian Automatic Speech Recognition (ASR) system by benchmarking three models—<code>Whisper-Large-V3</code>, <code>Seamless-M4T-V2-Large</code>, and <code>stt_fa_fastconformer_hybrid_large</code>—on a Persian speech dataset sourced from YouTube. The <code>FastConformer</code> model was subsequently fine-tuned using the NVIDIA NeMo toolkit. This process substantially improved its performance, <strong>reducing the Word Error Rate (WER) from 0.74 to 0.37 and the Character Error Rate (CER) from 0.59 to 0.19</strong>. The resulting model <strong>outperformed the best baseline</strong>, <code>Whisper-Large-V3</code> (<strong>WER of 0.56</strong>), demonstrating the effectiveness of language-specific adaptation for speech recognition tasks.
+  tags: ["Speech Recognition", "NLP", "Audio Processing", "ASR", "Transformers", "Fine-Tuning", "Benchmarking", "Python", "PyTorch", "NVIDIA NeMo", "Hugging Face", "TensorBoard"]
+
+- name: Katyusha - A Course Registration Assistant for Students
+  role: System Analysis & Design Course Project | Software Engineering Course Project
+  logo: /images/sections/projects/katyusha.png
+  timeline: "Mar 2023 - Apr 2024"
+  repo: "https://github.com/orgs/Katyusha-Group/repositories"
+  summary: Developed a comprehensive system to assist university students with course selection, architected on a scalable backend using Django and PostgreSQL and deployed in a production-ready Docker environment with automated CI/CD. A key component was a multithreaded web crawler that automated the ingestion of over 1,000 classes per cycle, achieving an <strong>>11x speedup</strong> and bypassing logins with a <code>KNN</code>-based CAPTCHA solver that reached <strong>96% accuracy</strong>. The system featured social functionalities like real-time chat, a <code>BERT</code>-based semantic search engine for content discovery, and instant course availability notifications via Email, SMS, and Telegram, all accessible through a RESTful API.
+  tags: ["Software Development", "Full-Stack Development", "Backend Development", "DevOps", "Web Scraping", "NLP", "Machine Learning", "Semantic Search", "CI/CD", "REST API", "Python", "Django", "TensorFLow", "PostgreSQL", "Selenium", "Docker", "GitHub Actions"]
+
+- name: Accelerated Reinforcement Learning for Mountain Car
+  role: Artificial Intelligence Course Project
+  timeline: "Fall 2023"
+  repo: https://github.com/KamyarMoradian/AI-MountainCar
   #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
+  summary: Developed a reinforcement learning agent to solve the classic Mountain Car problem by implementing and comparing on-policy (<code>SARSA</code>) and off-policy (<code>Q-Learning</code>) algorithms with linear function approximation. A key innovation in this project was engineering a compact feature set and applying L2 regularization to stabilize learning. This optimization proved highly effective, dramatically accelerating convergence for the <code>SARSA</code> agent from over 1000 episodes down to just <strong>2 episodes</strong>.
+  tags: ["RL", "Machine Learning", "Q-Learning", "SARSA", "Function Approximation", "Python", "Gymnasium", "NumPy"]
 
-- name: Toha
-  logo: /images/sections/projects/toha.png
-  image: /images/sections/projects/toha_website.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+- name: Accelerator Hardware Implementation for CNNs
+  role: Digital Computer Design Course Project
+  timeline: "Fall 2023"
+  repo: https://github.com/KamyarMoradian/CAD-CNN-Hardware
+  summary: Designed and implemented a VHDL-based hardware accelerator for CNNs optimizing performance for real-time applications. Conducted extensive testing to ensure accuracy and reliability. This project was inspired by <a href="https://ieeexplore.ieee.org/document/9764895/">"RASHT-A Partially Reconfigurable Architecture for Efficient Implementation of CNNs"</a> published in IEEE Transactions on Very Large Scale Integration (VLSI) Systems, 2022.
+  tags: ["FPGA Development", "Computer Architecture", "Hardware Acceleration", "Simulation", "Computer Vision", "Image Processing", "CNNs", "VHDL", "Python"]
+
+- name: XML to PyQt Code Converter for QLCDNumber Feature
+  role: Principles of Compiler Design Course Project
+  timeline: "Fall 2023"
+  repo: https://github.com/KamyarMoradian/CompilerProject-CodeConverter
+  summary: Developed a compiler using ANTLR and Python to automatically generate Python code for PyQt QLCDNumber widgets from a custom XML input. This tool streamlines the UI development process by translating a simple markup language directly into a functional GUI component.
+  tags: ["Compiler Construction", "Code Conversion", "Language Processing", "XML Parsing", "Software Automation", "Code Generation", "Python", "ANTLR (ANTLR4)", "Custom XML Grammar"]
+
+- name: Library Management System
+  role: Advanced Programming Course Project
+  timeline: "Spring 2021"
+  repo: https://github.com/MohammadaliFakhari/LibraryProject
+  summary: Developed a desktop library management system using C# and WPF for the front-end and SQL Server for the back-end database. The application features distinct user roles (Administrator and Standard User), each with a unique dashboard and permissions tailored to their responsibilities.
+  tags: ["Software Development", "Desktop Application Development", "Object-Oriented Programming (OOP)", "Event Handling", "SQL", "C#", "WPF (Windows Presentation Foundation)", ".NET Framework", "SQL Server", "XAML"]
+
+- name: Memory Hierarchy Simulation with Multi-Level Cache
+  role: Computer Architecture Course Project
+  timeline: "Spring 2022"
+  repo: https://github.com/KamyarMoradian/CompilerProject-CodeConverter
+  summary: Designed and implemented a VHDL simulation of a memory hierarchy featuring a multi-level cache. The system was driven by a simplified CPU model responsible for fetching and executing instructions, generating realistic memory access patterns to validate the cache's performance.
+  tags: ["Computer Architecture", "VHDL", "Memory Hierarchy", "Simulation"]
+
+- name: Sudoku CSP Solver
+  role: Artificical Intelligence Course Assignment Project
+  timeline: "Spring 2022"
+  repo: https://github.com/KamyarMoradian/AI-CSP-Sudoku
+  summary: Implemented and benchmarked multiple Constraint Satisfaction Problem (CSP) algorithms within a Sudoku solver. This project compares a standard backtracking approach against versions enhanced with Arc Consistency (AC-3) and the Minimum Remaining Values (MRV) heuristic. Each algorithm was evaluated on puzzles of varying difficulty by measuring execution time and the number of nodes expanded.
+  tags: ["Artificial Intelligence", "Constraint Satisfaction Problems (CSP)", "Algorithm Benchmarking", "Backtracking Search", "Constraint Propagation", "Arc Consistency (AC-3)", "Minimum Remaining Values (MRV)", "Heuristics", "State-Space Search", "Python"]
+
+- name: Tic-Tac-Toe MCST Solver
+  role: Artificical Intelligence Course Assignment Project
+  timeline: "Spring 2022"
+  repo: https://github.com/KamyarMoradian/AI-MCST-Tic-Tac-Toe
+  summary: Developed a Tic-Tac-Toe AI agent using the Monte Carlo Tree Search (MCTS) algorithm. The agent builds a search tree over thousands of iterations; each iteration involves a process of UCB1-based selection, node expansion, random simulation, and backpropagation of results. The project includes a playable game loop for a human vs. AI match and a suite of unit tests to verify the agent's logic.
+  tags: ["Artificial Intelligence", "Game AI", "Game Theory", "RL", "MCTS", "Tree Search Algorithms", "Game Tree", "Python", "Unit Testing"]
+
+- name: NQueen Hillclimbing Solver
+  role: Artificical Intelligence Course Assignment Project
+  timeline: "Spring 2022"
+  repo: https://github.com/KamyarMoradian/HillClimbing-NQueen
+  summary: Implemented a solution for the N-Queens problem using the Hill Climbing with Random Restart algorithm. The solver applies local search, starting from a random board state, to iteratively minimize the number of queen conflicts based on a heuristic function. A random-restart mechanism is integrated to escape local minima, with the solver's performance benchmarked by its success rate and execution time over multiple trials.
+  tags: ["Artificial Intelligence", "Local Search", "Hill Climbing", "Random-Restart Hill Climbing", "Heuristic Function", "State-Space Search", "Python"]
