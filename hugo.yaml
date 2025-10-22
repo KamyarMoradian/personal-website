@@ -1,3 +1,4 @@
+# ⚠️ If hosting under a repo path, use full URL (e.g. https://<github_username>.github.io/<repo_name>) or images won’t display correctly
 baseURL: https://kamyarmoradian.github.io/personal-website/
 
 languageCode: en
@@ -139,7 +140,7 @@ params:
 
     # Enable Analytics
     analytics:
-      enabled: false
+      enable: true
       services:
         # Google Analytics
         google:
